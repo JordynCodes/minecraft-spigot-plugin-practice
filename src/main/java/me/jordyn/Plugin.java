@@ -7,10 +7,10 @@ public class Plugin extends JavaPlugin {
   private static final Logger LOGGER=Logger.getLogger("practiceplugins");
 
   public void onEnable() {
-    LOGGER.info("practiceplugins enabled");
+    LOGGER.info("PracticePlugins enabled");
   }
 
   public void onDisable() {
-    LOGGER.info("practiceplugins disabled");
+    LOGGER.info("PracticePlugins disabled");
   }
 }
