@@ -1,0 +1,4 @@
+name: practiceplugins
+main: me.jordyn.practiceplugins.Plugin
+version: '${project.version}'
+api-version: '1.20'
