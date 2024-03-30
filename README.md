@@ -1,3 +1,10 @@
-A collection of practice plugins. Each branch of this repo is a separate, functioning plugin written and tested by me so that I can learn more about writing minecraft plugins.
+This plugin gives players a bow that teleports them to the location of the shot arrow.
 
-The main branch is the default template I used to build the other plugins.
+## Commands
+**/givebow:** Give the user a Teleport Bow
+
+**/givebow (player name):** Give the targeted player a Teleport Bow
+
+## Permissions
+**practiceplugins.givebow:** Allows /givebow command
+
