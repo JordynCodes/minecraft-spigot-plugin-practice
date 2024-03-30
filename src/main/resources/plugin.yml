@@ -2,3 +2,11 @@ name: practiceplugins
 main: me.jordyn.Plugin
 version: '${project.version}'
 api-version: '1.20'
+commands:
+  givebow:
+    usage: /<command>
+    permission: practiceplugins.givebow
+    permission-message: You do not have permission to use this command.
+permissions:
+  practiceplugins.givebow:
+    description: Allows /givebow command
