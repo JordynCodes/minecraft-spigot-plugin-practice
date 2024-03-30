@@ -6,7 +6,18 @@ commands:
   fly:
     usage: /<command>
     permission: practiceplugins.fly
-    permission-message: You do not have <permission>!
+    permission-message: You do not have permission to use this command.
 permissions:
   practiceplugins.fly:
     description: Allows /fly command
+  practiceplugins.fly.other:
+    description: Allows using the /fly command on another player
+  practiceplugins.fly.*:
+    description: Gives all /fly permissions
+    children: 
+      practiceplugins.fly: true
+      practiceplugins.fly.other: true
+  practiceplugins.*:
+    description: Gives all permissions
+    children:
+      practiceplugins.fly.*: true
