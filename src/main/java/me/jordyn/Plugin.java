@@ -19,7 +19,7 @@ public class Plugin extends JavaPlugin {
   public void onEnable() {
     LOGGER.info("PracticePlugins enabled");
     getCommand("armorstand").setExecutor(new ArmorStandCommand(this));
-    getServer().getPluginManager().registerEvents(new MenuHandler(), this);
+    getServer().getPluginManager().registerEvents(new MenuHandler(this), this);
   }
 
   public void openMainMenu(Player player){
@@ -39,6 +39,13 @@ public class Plugin extends JavaPlugin {
         mainMenu.setItem(0, create);
         mainMenu.setItem(8, close);
         player.openInventory(mainMenu);
+  }
+
+  public void openCreateMenu(Player player){
+    Inventory createMenu = Bukkit.createInventory(player, 9, ChatColor.GRAY + "Create an Armor Stand");
+    
+
+    player.openInventory(createMenu);
   }
 
   public void onDisable() {

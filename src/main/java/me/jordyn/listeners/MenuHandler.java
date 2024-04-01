@@ -5,8 +5,15 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
+import me.jordyn.Plugin;
 
 public class MenuHandler implements Listener{
+
+    private Plugin plugin;
+
+    public MenuHandler(Plugin plugin){
+        this.plugin = plugin;
+    }
     
     @EventHandler
     public void onMenuClick(InventoryClickEvent e){
@@ -19,7 +26,7 @@ public class MenuHandler implements Listener{
                 case ARMOR_STAND:
                     p.sendMessage("open armor stand menu");
                     p.closeInventory();
-                    // open inv
+                    plugin.openCreateMenu(p);
                     break;
                 case BARRIER:
                     p.sendMessage("closing main menu");
