@@ -2,3 +2,13 @@ name: practiceplugins
 main: me.jordyn.Plugin
 version: '${project.version}'
 api-version: '1.20'
+commands:
+  armorstand:
+    usage: /<command>
+    description: Create an armor stand
+    permission: practiceplugins.armorstand
+    aliases:
+      - as
+permissions:
+  practiceplugins.armorstand:
+    description: Allows use of /armorstand command
